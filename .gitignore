@@ -1,0 +1,8 @@
+.DS_Store
+source/*.aux
+source/*.fdb_latexmk
+source/*.fls
+source/*.log
+source/*.out
+source/*.pdf
+source/*.synctex.gz
