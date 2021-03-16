@@ -3,4 +3,8 @@ set -e
 mkdir -p output
 tectonic \
     --outdir output \
-    source/main.tex
+    research-paper/research-paper.tex
+
+tectonic \
+    --outdir output \
+    bibliography/bibliography.tex

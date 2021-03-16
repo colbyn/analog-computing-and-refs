@@ -1,4 +1,5 @@
 .DS_Store
+
 source/*.aux
 source/*.fdb_latexmk
 source/*.fls
@@ -6,3 +7,19 @@ source/*.log
 source/*.out
 source/*.pdf
 source/*.synctex.gz
+
+research-paper/*.aux
+research-paper/*.fdb_latexmk
+research-paper/*.fls
+research-paper/*.log
+research-paper/*.out
+research-paper/*.pdf
+research-paper/*.synctex.gz
+
+bibliography/*.aux
+bibliography/*.fdb_latexmk
+bibliography/*.fls
+bibliography/*.log
+bibliography/*.out
+bibliography/*.pdf
+bibliography/*.synctex.gz
