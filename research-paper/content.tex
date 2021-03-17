@@ -65,7 +65,13 @@ But perhaps too, just because software is typically easier to experiment and ite
 
 What may concern us now, the implementation of analog computers for such workloads, but, as many have pointed out. When we speak of digital vs. analog. What we are really discussing is, computation in terms of discrete vs. continuous analogs. 
 
-Digital computation is discreet, and proceeds in terms of discrete steps. All representations in digital form, are mere, and meaningless symbols. Computer arithmetic for instance, is simply the manipulation of such symbols is manner that implements such operations. This is also, the greatest strength to discrete computation. Remember those pen n' paper procedures you were taught for adding arbitrary numbers together? Digital computation implements the very same processes, and furthermore, can scale to arbitrary  
+Digital computation is discreet, and proceeds in terms of discrete steps. All representations in digital form, are mere, and meaningless symbols. Computer arithmetic for instance, is simply the manipulation of such symbols is manner that implements such operations. This is also, the greatest strength to discrete computation. Remember those pen n' paper procedures you were taught for adding arbitrary numbers together? Digital computation implements the very same processes, and so, can scale to adding arbitrary numbers without loss of precision\textsuperscript{Hehner}.
+
+Here, the versatility of discrete computer architectures cannot be understated. For instance, is there utility in simply simulating analog computation on digital hardware? Furthermore, if the criticism is about the von neumann bottleneck, then such really pertains to the limitations of the von neumann computer architecture, and therefore doesn't disqualify the entire field of discrete computer architectures. 
+
+Furthermore, analog architectures are encumbered by a multitude of hurdles.
+
+[\dots]
 
 Sarpeshkar described the output of an analog computer as a ``1 multi-bit'' channel, can this be said to be a function? As is, an analog computer, is presumably initialized VIA a `discrete' input from a digital computer. Therefore, perhaps analog computers could be modeled as a Comonad from Haskell. That is, in Haskell syntax, akin to the following relation, $\forall\;a\;b.\;a\;\to\;m\;b$. Perhaps then, translating this to digital form is simply mapping $m\;a \to a$, therein, loosing context that can only be represented in an analog computer. Furthermore, if we constrained this to $\forall\;a.\;a\;\to\;m\;a$, then subsequently, all further computation in this machine will proceed as a series of natural transformations of the form $\forall\;a.\;f\;a \to g\;a$, since $a$ is never transformed, this should ensure continuity of all values of $x$ in $a$. But overall, in analog computation, perhaps it'd suffice to say that an analog model is parameterized in terms of time and space, and is therefore limited to continuous functions that satisfy the domain. 
 
@@ -75,5 +81,5 @@ We can imagine these transformations as mappings of some $a\to{a}$, and where fu
 
 Each gate may be defined as some $\forall{a}.\;\mathrm{Constraint}\;a\Rightarrow\;a\to{a}$, where $\mathrm{Constraint}\;a$ represents some constraint that the composition of these gates must collectively satisfy. This provides some level of formal verification for our software. Given that, for instance, debugging such may be extremely difficult, or perhaps even, impossible. Furthermore, perhaps we can regard the unification of all of such constraints as the set representing the domain of our program, which we will regard as $S$. But, what about functions that transform the domain? For instance, what if some function $f$ introduces an asymptote, and another function $g$ cancels it out, and therefore the composition should likewise remove the constraint for subsequent functions. Likewise, addition should shift all the values within the domain by a given amount, including e.g. asymptotes. 
 
-\dots
+[\dots]
 
