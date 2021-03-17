@@ -32,9 +32,9 @@ This is because, for instance, \begin{quotation}
 
 Furthermore, to further expand upon the premise outlined in A Future of Medicine. I don't think this will be the full story to the totality of medicine. Because, simulations simply do one thing, they simulate, and therein, we build a probable stochastic model from such. Put simply, it's a mechanism that may be used to answer yes or no questions, but of course, what precedes treatment to some illness is the detection of such. 
 
-In his book called ``The Body: A Guide for Occupants'', Bill Bryson regarded cancer and other such diseases as ``system failures'', and therein, he remarked, part of the problem that is our nervous system, paradoxically, may not register the early formation of cancer and other such events. But perhaps we can go even further than the mere detection of cancer.
+In his book called ``The Body: A Guide for Occupants'', Bill Bryson regarded cancer and other such diseases as ``system failures'', and therein, he remarked, part of the problem is that our nervous system, paradoxically, may not register the early formation of cancer and other such events (given it's severity). But, perhaps we can go even further than the mere detection of cancer.
 
-What precedes treatment is detection, and when this is continuous, we may regard such as monitoring, and this is where we enter into the real of molecular programming. Can we run computational devices within cells? Yes. Furthermore, as Sarpeshkar noted in his paper, Analog synthetic biology, electronics (simulation) and chemistry (e.g. biochemical computation) are deeply linked. As Sarpeshkar wrote,
+What precedes treatment is detection, and when this is continuous, we may regard such as monitoring, and this is where we enter into the domain of molecular programming. Can we run computational devices within cells? Yes. Furthermore, as Sarpeshkar noted in his paper, Analog synthetic biology, electronics (simulation) and chemistry (e.g. biochemical computation) are deeply linked. As Sarpeshkar wrote,
 \begin{quotation}
     ``There are striking similarities between chemical-reaction dynamics (figure 3a) and electronic current flow in the subthreshold regime of transistor operation (figure 3b): electron concentration at the source is analogous to reactant concentration; electron concentration at the drain is analogous to product concentration; forward and reverse current flows in the transistor are analogous to forward and reverse reaction rates in a chemical reaction; the forward and reverse currents in a transistor are exponential in voltage differences at its terminals analogous to reaction rates being exponential in the free-energy differences in a chemical reaction; increases in gate voltage lower energy barriers in a transistor increasing current flow analogous to the effects of enzymes or catalysts in chemical reactions that increase reaction rates; and the stochastics of the Poisson shot noise in subthreshold transistors are analogous to the stochastics of molecular shot noise in reactions. [...] The logarithmic dependence of the electrochemical potential in chemical concentration or of current enables one to map log-domain analog transistor circuit motifs in electronics to log-domain analog molecular circuit motifs in cells and vice versa.''
 \end{quotation}
@@ -55,13 +55,28 @@ Because, as I've written, while a book may describe a life’s work in mathemati
 
 The field of synthetic biology is one that attempts to unify engineering and biology. For this intersection, we have a foundation that reduces biology to software. With a proper software ecosystem in place, these bottom-up, cumulative processes may give rise to very sophisticated products, and perhaps one day, akin to the emergent phenomena seen in nature itself. Because, such an ecosystem is akin to the aforementioned ``force multiplier of the human mind''.
 
+But perhaps too, just because software is typically easier to experiment and iterate on. You don't need a lab with specialized knowhow for the equipment, but in this case, perhaps, access to some cloud based compute infrastructure that affords easy and cheap access to the more specialized analog computing hardware. (If I happen to get into this, I'd perhaps call it SubSystems, given my \url{sub.systems} GTLD.)
 
+What may concern us now, the implementation of analog computers for such workloads, but, as many have pointed out. When we speak of digital vs. analog. What we are really discussing is, computation in terms of discrete vs. continuous analogs. 
 
+Digital computation is discreet, and proceeds in terms of discrete steps. All representations in digital form, are mere, and meaningless symbols. Computer arithmetic for instance, is simply the manipulation of such symbols is manner that implements such operations.
+
+Sarpeshkar described the output of an analog computer as a ``1 multi-bit'' channel, can this be said to be a function? As is, an analog computer, is presumably initialized VIA a `discrete' input from a digital computer. Therefore, perhaps analog computers could be modeled as a Comonad from Haskell. That is, in Haskell syntax, akin to the following relation, $\forall\;a\;b.\;a\;\to\;m\;b$. Perhaps then, translating this to digital form is simply mapping $m\;a \to a$, therein, loosing context that can only be represented in an analog computer. Furthermore, if we constrained this to $\forall\;a.\;a\;\to\;m\;a$, then subsequently, all further computation in this machine will proceed as a series of natural transformations of the form $\forall\;a.\;f\;a \to g\;a$, since $a$ is never transformed, this should ensure continuity of all values of $x$ in $a$. But overall, in analog computation, perhaps it'd suffice to say that an analog model is parameterized in terms of time and space, and is therefore limited to continuous functions that satisfy the domain. 
+
+Digital computers manipulate symbols, and can assign any arbitrary meaning to such. Whereas analog computers must maintain continuity, and therefore, must be defined as a series of transformations. The transformations may be a program, where the transformations themselves are built upon some more primitive set of gates. 
+
+We can imagine these transformations as mappings of some $a\to{a}$, and where function application is an application between functions.
+
+Each gate may be defined as some $\forall{a}.\;\mathrm{Constraint}\;a\Rightarrow\;a\to{a}$, where $\mathrm{Constraint}\;a$ represents some constraint that the composition of these gates must collectively satisfy. This provides some level of formal verification for our software. Given that, for instance, debugging such may be extremely difficult, or perhaps even, impossible. Furthermore, perhaps we can regard the unification of all of such constraints as the set representing the domain of our program, which we will regard as $S$. But, what about functions that transform the domain? For instance, what if some function $f$ introduces an asymptote, and another function $g$ cancels it out, and therefore the composition should likewise remove the constraint for subsequent functions. Likewise, addition should shift all the values within the domain by a given amount, including e.g. asymptotes. 
+
+\dots
+
+% Furthermore, what if, we wished to implement something that splits it's input into two identical channels, perhaps using tuples, akin to $\forall{a}.\;{a}\to{f}\;(a, a)$. 
 
 
 \section*{Bibliography}
 
-\section*{A Future of Medicine}
+\subsection*{A Future of Medicine}
 Dr. Bernard, A Future Of Medicine. Heme Review, \url{https://youtu.be/iVt5BpoTHYg}.
 \begin{enumerate}
     \item Caravelli, Francesco, and Juan Carbajal.
@@ -73,7 +88,7 @@ Dr. Bernard, A Future Of Medicine. Heme Review, \url{https://youtu.be/iVt5BpoTHY
 \end{enumerate}
 
 
-\section*{Memristors for the Curious Outsiders}
+\subsection*{Memristors for the Curious Outsiders}
 Caravelli, Francesco, and Juan Carbajal. “Memristors for the Curious Outsiders.” Technologies 6.4 (2018): 118. Crossref. Web.
 \begin{enumerate}
     \item Caravelli, Francesco, and Juan Carbajal.
@@ -88,7 +103,7 @@ Caravelli, Francesco, and Juan Carbajal. “Memristors for the Curious Outsiders
 
 
 
-\section*{Neural Networks and Analog Computation Beyond the Turing Limit}
+\subsection*{Neural Networks and Analog Computation Beyond the Turing Limit}
 Hava T. Siegelmann. 1999. Neural networks and analog computation: beyond the Turing limit. Birkhauser Boston Inc.
 \begin{enumerate}
     \item Hava T. Siegelmann.
@@ -99,7 +114,7 @@ Hava T. Siegelmann. 1999. Neural networks and analog computation: beyond the Tur
     \item I plan to use such in my analysis of analog computing. 
 \end{enumerate}
 
-\section*{Quantum Computing with Analog Circuits: Hilbert Space Computing}
+\subsection*{Quantum Computing with Analog Circuits: Hilbert Space Computing}
 Kish, Laszlo. (2003). Quantum Computing with Analog Circuits: Hilbert Space Computing. Proceedings of SPIE - The International Society for Optical Engineering. 5055. 10.1117/12.497438. 
 \begin{enumerate}
     \item Kish, Laszlo.
@@ -110,7 +125,7 @@ Kish, Laszlo. (2003). Quantum Computing with Analog Circuits: Hilbert Space Comp
     \item I plan to use such in my analysis of analog computing. 
 \end{enumerate}
 
-\section*{A Review of Analog Computing}
+\subsection*{A Review of Analog Computing}
 MacLennan, Bruce (2007). A review of analog computing. Technical Report CS-07-601, Department of Electrical Engineering \& Computer Science. University of Tennessee, Knoxville
 \begin{enumerate}
     \item MacLennan, Bruce.
@@ -121,7 +136,7 @@ MacLennan, Bruce (2007). A review of analog computing. Technical Report CS-07-60
     \item I plan to use such in my analysis of analog computing. 
 \end{enumerate}
 
-\section*{Computability of analog networks}
+\subsection*{Computability of analog networks}
 John V. Tucker and Jeffery I. Zucker. 2007. Computability of analog networks. Theor. Comput. Sci. 371, 1–2 (February, 2007), 115–146. DOI:https://doi.org/10.1016/j.tcs.2006.10.018
 \begin{enumerate}
     \item John V. Tucker and Jeffery I. Zucker.
@@ -132,7 +147,7 @@ John V. Tucker and Jeffery I. Zucker. 2007. Computability of analog networks. Th
     \item I plan to use such in my analysis of analog computing. 
 \end{enumerate}
 
-\section*{It’s an analog world}
+\subsection*{It’s an analog world}
 Sauro, H., Kim, K. It's an analog world. Nature 497, 572–573 (2013). https://doi.org/10.1038/nature12246
 \begin{enumerate}
     \item John V. Tucker and Jeffery I. Zucker.
@@ -144,7 +159,7 @@ Sauro, H., Kim, K. It's an analog world. Nature 497, 572–573 (2013). https://d
 \end{enumerate}
 
 
-\section*{Analog synthetic biology}
+\subsection*{Analog synthetic biology}
 Sarpeshkar, R. “Analog synthetic biology.” Philosophical transactions. Series A, Mathematical, physical, and engineering sciences vol. 372,2012 20130110. 24 Feb. 2014, doi:10.1098/rsta.2013.0110
 \begin{enumerate}
     \item John V. Tucker and Jeffery I. Zucker.
@@ -155,7 +170,7 @@ Sarpeshkar, R. “Analog synthetic biology.” Philosophical transactions. Serie
     \item I plan to use such in my analysis of analog computing. 
 \end{enumerate}
 
-\section*{Evidence-Based Medicine, Heterogeneity of Treatment Effects, and the Trouble with Averages}
+\subsection*{Evidence-Based Medicine, Heterogeneity of Treatment Effects, and the Trouble with Averages}
 Kravitz, Richard L et al. “Evidence-based medicine, heterogeneity of treatment effects, and the trouble with averages.” The Milbank quarterly vol. 82,4 (2004): 661-87. doi:10.1111/j.0887-378X.2004.00327.x
 \begin{enumerate}
     \item Kravitz, Richard.
@@ -166,7 +181,7 @@ Kravitz, Richard L et al. “Evidence-based medicine, heterogeneity of treatment
     \item I plan to use such in my analysis of analog computing. 
 \end{enumerate}
 
-\section*{Computation Beyond the Turing Limit}
+\subsection*{Computation Beyond the Turing Limit}
 Siegelmann, H T. “Computation beyond the turing limit.” Science (New York, N.Y.) vol. 268,5210 (1995): 545-8. doi:10.1126/science.268.5210.545
 \begin{enumerate}
     \item Siegelmann, Hava.
@@ -181,7 +196,7 @@ Siegelmann, H T. “Computation beyond the turing limit.” Science (New York, N
 
 
 
-\section*{Biological switches and clocks}
+\subsection*{Biological switches and clocks}
 Tyson, John \& Albert, Reka \& Goldbeter, Albert \& Ruoff, Peter \& Sible, Jill. (2008). Biological switches and clocks. Journal of the Royal Society, Interface / the Royal Society. 5 Suppl 1. S1-8. 10.1098/rsif.2008.0179.focus. 
 \begin{enumerate}
     \item Tyson, John \& Albert, Reka \& Goldbeter, Albert \& Ruoff, Peter \& Sible, Jill.
