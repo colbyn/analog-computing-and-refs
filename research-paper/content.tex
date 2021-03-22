@@ -1,21 +1,5 @@
 % \section{Prelude}
 
-% \begin{equation}
-% \begin{split}
-%     1\;\text{trillion} &= 1,000,000,000,000 = 1\,\mathrm{x}\,10^{12}\\
-%     1\;\text{human} &\approx 40\;\text{trillion}\;\mathrm{cells}\\
-%     1\;\text{cell} &\approx 100\;\text{trillion}\;\mathrm{atoms}
-% \end{split}
-% \end{equation}
-
-% If we needed to compute one instruction for each atom, for each cell, in the human body. Then we will require $4 \mathrm{x} 10^{27}$ instructions.
-
-% To imagine this in terms of time. Consider first, simply the latency overhead incurred when your processing hardware and main memory is physically separated from each other, and therefore, each instruction must first read some datum from main memory. Lets say this overhead is $100\mathrm{ns}$ per instruction. Then latency overhead alone will amount to $4\;\mathrm{x}\;10^{20}$ seconds, or in other words, latency overhead alone will total $12,683,916,800,000$ years per evolution.
-
-% But alas, this is a ludicrous exercise for a multitude of reasons. Because, for instance, what is meant by one instruction per atom? For each evolution, can the state of each atom be computed without considering neighboring interactions? Furthermore, can modern computers fundamentally handle such workloads?
-
-
-
 I've decided to change my topic of interest. For the reasons given below (will probably be seen in the resulting paper).
 
 In his video essay, A Future of Medicine, Dr. Bernard postulates on a world that views our current system of evidence based medicine, as we see European plague doctors. Because in our modern system of evidence based medicine, we extrapolate population data to a given person, for the purpose of predicting outcome. Which you may ask, what is the problem with such? 
@@ -57,7 +41,15 @@ That is, a system where discrete units build upon other discrete units and there
 
 From personal experience, my \url{https://imager.io} project wouldn’t be possible without the various open source components it’s built upon. Simply because my time is finite, and especially because lower-level encoding details are just \textbf{too complicated for me to understand and implement on my own}. I am nevertheless able to compose such components into a larger and more sophisticated end product, from the preexisting output of resources and information from the global open source, software community. Overall added value that may be considered to be greater than the sum of its components, and therefore emergent in a manner of speaking. In an old English paper I likened the open source community as ``the printing press of computable knowledge'', and perhaps even more significant than the advent of the printing press itself, because as the industrial revolution introduced a force multiplier of human muscle, so too does abstraction introduce a force multiplier of the human mind.
 
-Because, as I've written, while a book may describe a life’s work in mathematics and applications therein, the medium is itself rather passive. A book may describe a life’s work in applied mathematics, yet a mind is required to manifest its application. Whereas, imagine a medium where the most knowledgeable of experts can record their understanding of a given domain as functions that map problems to solutions, in a manner that can be utilized by any layperson, and thereafter this record can be reapplied, reused, and so forth, forever thereafter.
+Because, as I've written, while a book may describe a life’s work in mathematics and applications therein, the medium is itself rather passive. A book may describe a life’s work in applied mathematics, yet a mind is required to manifest its application. Whereas, imagine a medium where the most knowledgeable of experts can record their understanding of a given domain as functions that map problems to solutions, in a manner that can be utilized by any layperson, and thereafter this record can be reapplied, reused, and so forth, forever thereafter, and, in this manner, what are the ramifications of such?
+
+If you can build upon abstracted systems written by experts, where these abstractions mask complexity, we may then presume that the overall barrier to entry will drop. That is again, if laypersons are able to built upon abstracted systems in a manner that doesn't require an expert understanding or formal education in such (and presumably in a manner akin to my aforementioned \url{https://imager.io} story). But on the other end, if the barrier to entry is lower, this implies reduced costs, and therefore, we may likewise see significant cost savings in industries built upon such, perhaps in a manner akin to using ``higher level'' programming languages for applicable problems. 
+
+% From here, we may wonder what this could entail. 
+
+% On the positive, certainly more diverse products. 
+
+% But perhaps too, something that would otherwise be untenable. Consider for instance, the debate concerning vaping, some are opposed to such, others cite damage mitigation and therefrom, improved public health, and in this regard, I think it’s telling that vaping isn’t something that originated from the medical industry. Personally, it almost wonder if our medical systems is too fixated on absolute metrics rather than ``strategic risk''. It’s the same with the economy in the case of COVID, as George Friedman remarked, that is, they optimize for saving lives, notable goal, but at the expense of practical matters such as employment and therefrom, e.g. paying rent. But returning all the way back to vaping. Can damage reduction likewise apply to other `harmful' lifestyles that people can’t get over? Such as damage reduction for obesity?
 
 The field of synthetic biology is one that attempts to unify engineering and biology. For this intersection, we have a foundation that reduces biology to software. With a proper software ecosystem in place, these bottom-up, cumulative processes may give rise to very sophisticated products, and perhaps one day, akin to the emergent phenomena seen in nature itself. Because, such an ecosystem is akin to the aforementioned ``force multiplier of the human mind''.
 
@@ -65,7 +57,7 @@ But perhaps too, just because software is typically easier to experiment and ite
 
 What may concern us now, the implementation of analog computers for such workloads, but, as many have pointed out. When we speak of digital vs. analog. What we are really discussing is, computation in terms of discrete vs. continuous analogs. 
 
-Digital computation is discreet, and proceeds in terms of discrete steps. All representations in digital form, are mere, and meaningless symbols. Computer arithmetic for instance, is simply the manipulation of such symbols is manner that implements such operations. This is also, the greatest strength to discrete computation. Remember those pen n' paper procedures you were taught for adding arbitrary numbers together? Digital computation implements the very same processes, and so, can scale to adding arbitrary numbers without loss of precision\textsuperscript{Hehner}.
+Digital computation is discreet, and proceeds in terms of discrete steps. All representations in digital form, are mere, and meaningless symbols. Computer arithmetic for instance, is simply the manipulation of such symbols is manner that implements such operations. This is also, the greatest strength to discrete computation. Remember those pen n' paper procedures you were taught for adding arbitrary numbers together? Digital computation implements the very same processes, and so, can scale to adding arbitrary numbers without loss of precision\textsuperscript{(Hehner)}.
 
 Here, the versatility of discrete computer architectures cannot be understated. For instance, is there utility in simply simulating analog computation on digital hardware? Furthermore, if the criticism is about the von neumann bottleneck, then such really pertains to the limitations of the von neumann computer architecture, and therefore doesn't disqualify the entire field of discrete computer architectures. 
 
@@ -82,4 +74,57 @@ We can imagine these transformations as mappings of some $a\to{a}$, and where fu
 Each gate may be defined as some $\forall{a}.\;\mathrm{Constraint}\;a\Rightarrow\;a\to{a}$, where $\mathrm{Constraint}\;a$ represents some constraint that the composition of these gates must collectively satisfy. This provides some level of formal verification for our software. Given that, for instance, debugging such may be extremely difficult, or perhaps even, impossible. Furthermore, perhaps we can regard the unification of all of such constraints as the set representing the domain of our program, which we will regard as $S$. But, what about functions that transform the domain? For instance, what if some function $f$ introduces an asymptote, and another function $g$ cancels it out, and therefore the composition should likewise remove the constraint for subsequent functions. Likewise, addition should shift all the values within the domain by a given amount, including e.g. asymptotes. 
 
 [\dots]
+
+
+\subsection*{Analog Computer Introduction}
+
+Digital computation is discreet, and proceeds in terms of discrete steps. All representations in digital form, are mere, and meaningless symbols. Computer arithmetic for instance, is simply the manipulation of such symbols is manner that implements such operations. This is also, the greatest strength to discrete computation. Remember those pen n' paper procedures you were taught for adding arbitrary numbers together? Digital computation implements the very same processes, and so, can scale to adding arbitrary numbers without loss of precision\textsuperscript{(Hehner)}.
+
+Conversely, the central issue plaguing analog computers is that of precision. While digital computers can arbitrary scale the resolution underlying numerical workloads, analog computations are typically bounded to just three or four bits of precision. 
+
+Overall, the versatility of discrete computer architectures cannot be understated. For instance, is there utility in simply simulating analog computation on digital hardware? Furthermore, if the criticism is about the von neumann bottleneck, then such really pertains to the limitations of the von neumann computer architecture, and therefore doesn't disqualify the entire field of discrete computer architectures.
+
+Yet, advocates of analog computers argue that many problems do not require high precision computations. Citing for instance, the limitations of real world measurements themselves.\textsuperscript{(MacLennan)} Likewise, Sarpeshkar argues that the fundamental limitations of analog computing, notably, noisy signals, is ideal for simulating stochastic process. Because simulating randomness on digital hardware imposes synchronization constraints that significantly impacts performance on such systems. Whereas on analog architectures, Sarpeshkar argues, you essentially get such for free.
+
+
+Yet, while discrete computer architectures are incredibly versatile, it may not necessarily be efficient.  
+
+and furthermore, many workloads may not require high precision computations and therefore needn't pay the price in energy consumption. 
+
+Furthermore when it comes to solving say, differential equations, analog computing is unrivaled. Consider the following digram that implements $\ddot{y} = -y$. 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\linewidth]{../assets/analogue-computing-fun-differential-equations.png}
+    \caption{``The basic circuit for solving $\ddot{y} = -y$. From left to right we have two integrators and a summer (with each component inverting the sign)''. Source: \url{https://chalkdustmagazine.com/features/analogue-computing-fun-differential-equations/}.}
+    \label{Image Label}
+\end{figure}
+
+As you can see, the leftmost elements are the integrators, while the rightmost element is called the summer. 
+
+As MacLennan wrote, in digital computation, quantities are rather arbitrary symbols that have no direct relationship to the physical systems that such may be tasked with simulating. In contrast, generally, analog and physical phenomena are governed and defined by the same mathematical laws. Or as MacLennan put it, ``the computational quantities are proportional to the modeled quantities.''
+
+Perhaps it goes without saying then, that implementing the same processes in digital computer architectures would require significantly more infrastructure in implementing the same mathematical laws in terms of manipulations of arbitrary symbols. Conversely, there is an elegant economy to the above diagram, and furthermore, it implements such without requiring stored computer memory, and this itself is notable, as I will try to explain.
+
+Imagine we somehow needed to compute one instruction for each atom, for each cell, in the human body. Then we will require $4 \mathrm{x} 10^{27}$ instructions.
+
+% \begin{equation}
+% \begin{split}
+%     1\;\text{trillion} &= 1,000,000,000,000 = 1\,\mathrm{x}\,10^{12}\\
+%     1\;\text{human} &\approx 40\;\text{trillion}\;\mathrm{cells}\\
+%     1\;\text{cell} &\approx 100\;\text{trillion}\;\mathrm{atoms}
+% \end{split}
+% \end{equation}
+
+To imagine this in terms of time. Consider first, simply the latency overhead incurred when your processing hardware and main memory is physically separated from each other, and therefore, each instruction must first read some datum from main memory. Lets say this overhead is $100\mathrm{ns}$ per instruction. Then latency overhead alone will amount to $4\;\mathrm{x}\;10^{20}$ seconds, or in other words, latency overhead alone will total $12,683,916,800,000$ years per evolution.
+
+But alas, this is a ludicrous exercise for a multitude of reasons. Because, for instance, what is meant by one instruction per atom? For each evolution, can the state of each atom be computed without considering neighboring interactions? But crucially, remember the aforementioned digram that implements $\ddot{y} = -y$? Such problems needn't concern such implementations. 
+
+
+\subsection*{Real World Implementation}
+
+
+
+
+
 
