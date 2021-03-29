@@ -8,3 +8,7 @@ tectonic \
 tectonic \
     --outdir output \
     bibliography/bibliography.tex
+
+tectonic \
+    --outdir output \
+    research-perspectives/research-perspectives.tex

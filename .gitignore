@@ -23,3 +23,12 @@ bibliography/*.log
 bibliography/*.out
 bibliography/*.pdf
 bibliography/*.synctex.gz
+
+
+research-perspectives/*.aux
+research-perspectives/*.fdb_latexmk
+research-perspectives/*.fls
+research-perspectives/*.log
+research-perspectives/*.out
+research-perspectives/*.pdf
+research-perspectives/*.synctex.gz
