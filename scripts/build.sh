@@ -9,6 +9,10 @@ set -e
 #     --outdir output \
 #     bibliography/bibliography.tex
 
+# tectonic \
+#     --outdir output \
+#     research-perspectives/research-perspectives.tex
+
 tectonic \
     --outdir output \
-    research-perspectives/research-perspectives.tex
+    outline/outline.tex
