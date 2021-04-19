@@ -1,0 +1,109 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% METADATA
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \documentclass{article}
+\LoadClass[letterpaper,12pt]{article}
+\documentclass[12pt,letterpaper]{article}
+
+
+% \title{Presenting Research Perspectives}
+% \author{Colbyn Wadman}
+% \usepackage{parskip}
+\usepackage{xurl}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=false,
+    pdfborder = {0 0 0}
+}
+% \usepackage{blindtext}
+% \usepackage{enumitem}
+% \usepackage{graphicx}
+% \usepackage{amsmath}
+\usepackage{caption}
+% \usepackage{graphicx}
+\usepackage{float}
+
+% \usepackage[left=1in,right=1in,top=1in,bottom=1in]{geometry}
+
+% \setlength{\parindent}{1em}
+% \setlength{\parskip}{1em}
+% \linespread{1.8}
+% % \usepackage{times}
+% \usepackage{lineno}
+% \usepackage{fancyhdr}
+% \pagestyle{fancy}
+% \lhead{} 
+% \chead{} 
+% \rhead{Wadman \thepage} 
+% \lfoot{} 
+% \cfoot{} 
+% \rfoot{}
+% \renewcommand{\headrulewidth}{0pt} 
+% \renewcommand{\footrulewidth}{0pt} 
+% %To make sure we actually have header 0.5in away from top edge
+% %12pt is one-sixth of an inch. Subtract this from 0.5in to get headsep value
+% \setlength\headsep{0.333in}
+
+% \usepackage[tiny]{titlesec}
+% \usepackage{etoolbox}
+\usepackage{ifpdf}
+
+
+\usepackage{ifpdf}
+\usepackage{mla}
+\usepackage[tiny]{titlesec}
+
+
+
+\newcommand{\mladate}{%
+\the\day\
+\ifcase\the\month
+\or January
+\or February
+\or March
+\or April
+\or May
+\or June
+\or July
+\or August
+\or September
+\or October
+\or November
+\or December
+\fi
+\the\year }
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% DOCUMENT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+% \begin{mla}{Firstname}{Lastname}{Prof's lastname}{class name}{\mladate}{Paper title}
+\begin{mla}{Colbyn}{Wadman}{Dr. Birrell}{ENGL 2010}{\mladate}{A Review on the Future of Medicine}
+
+
+% \begin{flushleft}
+
+% %%%%First page name, class, etc
+% Colbyn Wadman\\
+% Dr. James R. Birrell\\
+% ENGL 2010\\
+% \today\\
+% %%%%Title
+% \section*{\centering A Critique on the Future of Medicine}
+% \setcounter{section}{1}
+
+% %%%%Changes paragraph indentation to 0.5in
+% \setlength{\parindent}{0.5in} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% BODY
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{content.tex}
+\input{refs.tex}
+
+
+% \end{flushleft}
+\end{mla}
+\end{document}
