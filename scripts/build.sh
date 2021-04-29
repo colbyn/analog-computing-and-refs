@@ -27,6 +27,11 @@ elif [ "$1" == "review" ]; then
     tectonic \
         --outdir output \
         review/review.tex
+elif [ "$1" == "final-paper" ]; then
+    echo "Building final-paper"
+    tectonic \
+        --outdir output \
+        final-paper/final-paper.tex
 else
     echo "Building all papers"
     tectonic \
@@ -47,4 +52,7 @@ else
     tectonic \
         --outdir output \
         review/review.tex
+    tectonic \
+        --outdir output \
+        final-paper/final-paper.tex
 fi
