@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1619658531 "/Users/colbyn/School/English/analog-computing-and-refs/final-paper/final-paper.tex" "/Users/colbyn/School/English/analog-computing-and-refs/final-paper/final-paper.pdf" "final-paper" 1619658532
-  "/Users/colbyn/School/English/analog-computing-and-refs/final-paper/final-paper.aux" 1619658531 662 b2b94621371df8d9296b8bf5bec1b851 ""
+["pdflatex"] 1619658923 "/Users/colbyn/School/English/analog-computing-and-refs/final-paper/final-paper.tex" "/Users/colbyn/School/English/analog-computing-and-refs/final-paper/final-paper.pdf" "final-paper" 1619658924
+  "/Users/colbyn/School/English/analog-computing-and-refs/final-paper/final-paper.aux" 1619658924 662 b2b94621371df8d9296b8bf5bec1b851 ""
   "/Users/colbyn/School/English/analog-computing-and-refs/final-paper/final-paper.tex" 1619651702 2471 10294a632c2d2c4b478779132dc0a64d ""
   "/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2020/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -84,15 +84,15 @@
   "/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1586288239 4811913 0be9a7e86c70a26e5e3042966bcd7097 ""
   "/usr/local/texlive/2020/texmf-var/web2c/pdftex/pdflatex.fmt" 1586288259 2432462 fd0fa20e9a3cb5f8169fd0ba1c955158 ""
   "/usr/local/texlive/2020/texmf.cnf" 1586288231 577 d60164b4589a341208aff7a667fbbdcb ""
-  "content.tex" 1619658529 20636 c32a270da9163751b894cbb150f4f153 ""
-  "final-paper.aux" 1619658531 662 b2b94621371df8d9296b8bf5bec1b851 "pdflatex"
-  "final-paper.out" 1619658531 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "content.tex" 1619658922 20637 9b641c2151bd079715fcc82a312478e6 ""
+  "final-paper.aux" 1619658924 662 b2b94621371df8d9296b8bf5bec1b851 "pdflatex"
+  "final-paper.out" 1619658923 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   "final-paper.tex" 1619651702 2471 10294a632c2d2c4b478779132dc0a64d ""
   "refs.tex" 1619651664 3143 464ec2aaf12a3187df7e596683f46cb7 ""
   (generated)
-  "final-paper.out"
-  "final-paper.log"
-  "/Users/colbyn/School/English/analog-computing-and-refs/final-paper/final-paper.log"
   "final-paper.aux"
-  "/Users/colbyn/School/English/analog-computing-and-refs/final-paper/final-paper.pdf"
   "final-paper.pdf"
+  "/Users/colbyn/School/English/analog-computing-and-refs/final-paper/final-paper.pdf"
+  "/Users/colbyn/School/English/analog-computing-and-refs/final-paper/final-paper.log"
+  "final-paper.log"
+  "final-paper.out"
